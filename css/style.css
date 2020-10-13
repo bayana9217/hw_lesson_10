@@ -1,0 +1,316 @@
+@font-face {
+	 font-family: 'Gilroy';
+	 src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+		  url('../fonts/Gilroy-Medium.woff') format('woff');
+	 font-weight: 500;
+	 font-style: normal;
+	 font-display: swap;
+}
+
+@font-face {
+	 font-family: 'Gilroy';
+	 src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+		  url('../fonts/Gilroy-Regular.woff') format('woff');
+	 font-weight: normal;
+	 font-style: normal;
+	 font-display: swap;
+}
+
+@font-face {
+	 font-family: 'Gilroy';
+	 src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+		  url('../fonts/Gilroy-Bold.woff') format('woff');
+	 font-weight: 700;
+	 font-style: normal;
+	 font-display: swap;
+}
+/* Обнуляющий стиль */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+ol li,
+ul li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+	font-size: 14px;
+	line-height: 1;
+	font-family: 'Gilroy';
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+/* -------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	background-color: #111428;
+}
+._container {
+	max-width: 385px;
+	margin: 0 auto;
+}
+.form {
+	margin: 70px 0 100px 0;
+}
+
+/* ------------Восстановить пароль-------------------- */
+
+.password-recovery {
+}
+.password-recovery__container {
+}
+.password-recovery__title {
+	max-width: 441px;
+	margin: 15px auto;
+}
+.title {
+	color: #ffffff;
+	font-size: 38px;
+	font-weight: 700;
+}
+.password-recovery__assistant {
+	font-size: 16px;
+	margin: 0 0 40px 0;
+	width: 100%;
+	text-decoration: none;
+}
+._assistant {
+	color: #64B369;
+	font-weight: 500;
+}
+._assistant:hover{
+	text-decoration: underline;
+}
+.password-recovery__input {
+}
+.input {
+	width: 100%;
+	height: 50px;
+	padding: 0 20px;
+	border-radius: 5px;
+	margin: 0 0 30px 0;
+	font-size: 18px;
+}
+.password-recovery__back {
+}
+.password-recovery__back span{
+	background: url("../img/icon.png") left no-repeat;
+	padding: 0 0 0 30px;
+}
+.back{
+	margin: 0 0 30px 0;
+}
+.back:hover{
+	text-decoration: underline;
+}
+.back__assistant {
+	color: #ffffff;
+}
+.password-recovery__btn {
+	margin: 0 0 20px 0;
+}
+.button{
+	background-color: #337AB7;
+	font-size: 24px;
+	font-weight: 700;
+	color: #ffffff;
+	width: 100%;
+	height: 50px;
+	padding: 0 20px;
+	border-radius: 5px;
+	margin: 0 0 30px 0;
+}
+.button:hover{
+	background-color: #275175;
+	transition: 0.2s;
+}
+.password-recovery__warning{
+	font-size: 16px;
+	font-weight: 500;
+	color: #AEAEAE;
+	line-height: 1.3;
+	margin: 0 0 30px 0;
+}
+.password-recovery__about-the-account {
+	text-align: center;
+}
+.registration-link {
+	font-size: 18px;
+	font-weight: 500;
+	color: #ffffff;
+}
+.registration-link__assistant {
+	margin: 0 0 0 10px;
+}
+.border-bottom{
+	border-bottom: 2px solid #ffffff;
+	margin: 60px 50px;
+	min-width: 1216px;
+}
+
+/* ---------Вход --------- */
+
+.login {
+}
+.login__container {
+}
+.login__title {
+	margin: 0 0 50px 0;
+	text-align: center;
+}
+.login__input {
+}
+.login__checkbox{
+	margin: 0 0 30px 0;
+}
+.login__checkbox-item{
+	display: none;
+}
+.login__checkbox-item:checked + .login__lable::before{
+	background: #ffffff url("../img/check.png") center / 80% no-repeat;
+}
+.login__lable{
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 500;
+}
+.login__lable::before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin: 0 10px -3.5px 0;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+.login__assistant{
+	display: inline-block;
+	margin: 0 0 0 70px;
+	font-size: 18px;
+}
+.login__about-the-account{
+	text-align: center;
+}
+
+/* -------------------Регистрация----------------------- */
+
+.registration {
+}
+.registration__container {
+}
+.registration__title {
+	margin: 0 0 45px 0;
+	text-align: center;
+}
+.registration__input {
+}
+.registration__radio {
+	display: inline-block;
+	margin: 0 50px 30px 0;
+	position: relative;
+	padding: 0 0 0 30px;
+}
+.radio {
+	display: none;
+}
+.radio:checked + .registration__lable::after{
+	transform: scale(1);
+}
+.registration__lable {
+	font-size: 18px;
+	font-weight: 500;
+	color: #ffffff;
+}
+.registration__lable::before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin: 0 10px -3.5px 0;
+	background-color: #ffffff;
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.registration__lable::after{
+	transform: scale(0);
+	transition: all 0.3s ease 0s;
+	content: "";
+	width: 12px;
+	height: 12px;
+	border-radius: 5px;
+	background-color: #337AB7;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+}
+.registration__agreement {
+	margin: 0 0 30px 0;
+}
+.checkbox {
+}
+.checkbox__item {
+	display: none;
+}
+.checkbox__item:checked + .checkbox__lable::before{
+	background: #ffffff url("../img/check.png") center / 80% no-repeat;
+}
+.checkbox__lable {
+	font-size: 18px;
+	font-weight: 500;
+	color: #ffffff;
+}
+.checkbox__lable::before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 0 10px -3.5px 0;
+}
+.registration__assistant {
+	display: inline-block;
+	margin: 0 0 0 10px;
+	font-size: 18px;
+}
+.registration__btn {
+}
